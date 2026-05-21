@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:pages="clr-namespace:CampusAttendanceSystem.Pages"
+       x:Class="CampusAttendanceSystem.AppShell">
+
+    <ShellContent ContentTemplate="{DataTemplate pages:LoginPage}" Route="LoginPage"/>
+    <ShellContent ContentTemplate="{DataTemplate pages:CheckPage}" Route="CheckPage"/>
+    <ShellContent ContentTemplate="{DataTemplate pages:RecordPage}" Route="RecordPage"/>
+
+</Shell>

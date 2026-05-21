@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CampusAttendanceSystem.Pages.RecordPage"
+             Title="Attendance History">
+
+    <VerticalStackLayout Padding="20">
+        <CollectionView x:Name="attendanceListView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Margin="5" BackgroundColor="#F0F0F0" Padding="10">
+                        <VerticalStackLayout>
+                            <Label Text="{Binding Type}" FontAttributes="Bold" FontSize="16"/>
+                            <Label Text="{Binding Time}" FontSize="14"/>
+                            <Label Text="{Binding Location}" FontSize="14" TextColor="Gray"/>
+                        </VerticalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button Text="Back" BackgroundColor="#3498DB" TextColor="White"
+                Clicked="OnBackClicked"/>
+    </VerticalStackLayout>
+
+</ContentPage>
